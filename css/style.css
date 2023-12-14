@@ -3669,13 +3669,14 @@ p {
 .menu {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 33px;
-  padding-top: 6px
+  padding-top: 6px;
+  position: relative;
+  bottom: 10vh;
 }
 
 .menu__item {
   font: 700 14px/16px 'Trajana', Arial, Helvetica, sans-serif;
-  color: #fff;
+  color: black;
   letter-spacing: 0px;
   display: inline-block;
   vertical-align: middle;
@@ -3715,11 +3716,11 @@ p {
 
 .projects__link {
   font: 700 14px/16px 'Trajana', Arial, Helvetica, sans-serif;
-  color: #fff;
+  color: black;
   letter-spacing: 0px;
   display: inline-block;
   vertical-align: middle;
-  padding: 3px 25px 4px 12px;
+  padding: 3px 25px 4px 0px;
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -4007,7 +4008,7 @@ p {
   padding: 0;
   width: 100%;
   position: fixed;
-  top: 0;
+  bottom: 0;
   left: 0;
   z-index: 1000
 }
@@ -4016,7 +4017,7 @@ p {
   position: absolute;
   width: 100%;
   height: 108px;
-  top: 0;
+  bottom: 0;
   left: 0;
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -4025,9 +4026,9 @@ p {
   transform: translate3d(0, 0px, 1px);
   background-color: #ffffff;
   border-bottom: 1px solid #000;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%
 }
 
 .header__bg_transparent {
@@ -4051,7 +4052,7 @@ p {
   display: inline-block;
   position: absolute;
   top: 38px;
-  right: 0
+  left: 0
 }
 
 .header_min .logo {
@@ -4070,11 +4071,6 @@ p {
 .header_dark .header__bg {
   background: #f7f7f7;
   border-bottom: 1px solid #ebebeb
-}
-
-.header_dark .header__bg_transparent {
-  background: transparent;
-  border-bottom: 1px solid transparent
 }
 
 .header_dark .logo__svg {
@@ -4372,18 +4368,16 @@ p {
 
 .about_projects-top {
   padding-top: 262px;
-  padding-bottom: 76px
+  padding-bottom: 262px
 }
 
 .about_projects-top .about__bg {
-  top: 246px;
-  width: 100%;
-  left: 0;
-  letter-spacing: 3.2vw;
-  font-size: 12.5vw;
-  color: rgba(0, 0, 0, 0.8);
-  opacity: 0.03;
-  text-indent: 0
+  top: -181px;
+  opacity: 1;
+}
+
+.inout_vid{
+  min-width: 100%;
 }
 
 .about_projects-top .about__bg .line {
