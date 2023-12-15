@@ -5825,19 +5825,6 @@ $('.menu-filters').on('scroll', function() {
 
   var menuEndOffset = menuInvisibleSize - paddleMargin;
 
-  // show & hide the paddles 
-  // depending on scroll position
-  if (menuPosition <= paddleMargin) {
-    $(leftPaddle).addClass('hidden');
-    $(rightPaddle).removeClass('hidden');
-  } else if (menuPosition < menuEndOffset) {
-    // show both paddles in the middle
-    $(leftPaddle).removeClass('hidden');
-    $(rightPaddle).removeClass('hidden');
-  } else if (menuPosition >= menuEndOffset) {
-    $(leftPaddle).removeClass('hidden');
-    $(rightPaddle).addClass('hidden');
-  }
 });
 
 // scroll to left
