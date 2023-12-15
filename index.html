@@ -10,6 +10,7 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -66,9 +67,9 @@
 
         <section class="about about_projects-top" data-color-section="white">
             <div class="about__bg">
-                    <video class="inout_vid" autoplay loop muted>
-                        <source src="assets/video/origin.mp4" type="video/mp4">
-                    </video>
+                <video class="inout_vid" autoplay loop muted>
+                    <source src="assets/video/origin.mp4" type="video/mp4">
+                </video>
             </div>
             <div class="wrapper about__wrapper">
                 <h2 class="h2 about__h2" data-split-letters="1000">
@@ -86,13 +87,12 @@
                     <h2 class="h2 all-projects__h2" data-split-letters>
                     </h2>
                     <div class="all-projects__inner">
-                        <div class="filters all-projects__filters" id="filters">
+                        <!-- <div class="filters all-projects__filters" id="filters">
 
                             <button class="filters__button filters__button_active wow fadeInUp" data-wow-delay="0.2s"
                                 data-filter="*">
                                 All
                             </button>
-
                             <button class="filters__button wow fadeInUp" data-wow-delay="0.4s"
                                 data-filter="[data-filter-card=museums]">
                                 Museums & Exhibition Centers
@@ -142,8 +142,75 @@
                                 Samples
                             </button>
 
-                        </div>
+                        </div> -->
+                        <div class="filters all-projects__filters" id="filters">
+                            <div class="menu-wrapper-filters">
+                                <ul class="menu-filters">
+                                    <li class="item-filters">
+                                        <button class="filters__button wow fadeInUp" data-wow-delay="0.4s"
+                                            data-filter="[data-filter-card=museums]">
+                                            Museums & Exhibition Centers
+                                        </button>
+                                    </li>
+                                    <li class="item-filters">
+                                        <button class="filters__button wow fadeInUp" data-wow-delay="0.4s"
+                                            data-filter="[data-filter-card=hospitality]">
+                                            Hospitality
+                                        </button>
+                                    </li>
+                                    <li class="item-filters">
+                                        <button class="filters__button wow fadeInUp" data-wow-delay="0.4s"
+                                            data-filter="[data-filter-card=retail]">
+                                            Retail
+                                        </button>
+                                    </li>
+                                    <li class="item-filters"><button class="filters__button wow fadeInUp"
+                                            data-wow-delay="0.4s" data-filter="[data-filter-card=healthcare]">
+                                            Healthcare
+                                        </button></li>
+                                    <li class="item-filters"><button class="filters__button wow fadeInUp"
+                                            data-wow-delay="0.4s" data-filter="[data-filter-card=education]">
+                                            Education
+                                        </button></li>
+                                    <li class="item-filters"> <button class="filters__button wow fadeInUp"
+                                            data-wow-delay="0.4s" data-filter="[data-filter-card=corporate]">
+                                            Corporate
+                                        </button></li>
+                                    <li class="item-filters"> <button class="filters__button wow fadeInUp"
+                                            data-wow-delay="0.4s" data-filter="[data-filter-card=food]">
+                                            Food & Beverage
+                                        </button></li>
+                                    <li class="item-filters"><button class="filters__button wow fadeInUp"
+                                            data-wow-delay="0.4s" data-filter="[data-filter-card=residential]">
+                                            Residential
+                                        </button></li>
+                                    <li class="item-filters"><button class="filters__button wow fadeInUp"
+                                            data-wow-delay="0.4s" data-filter="[data-filter-card=furniture]">
+                                            Furniture and Display items
+                                        </button></li>
+                                    <li class="item-filters"><button class="filters__button wow fadeInUp"
+                                            data-wow-delay="0.4s" data-filter="[data-filter-card=working]">
+                                            Working with Architects
+                                        </button></li>
+                                    <li class="item-filters"> <button class="filters__button wow fadeInUp"
+                                            data-wow-delay="0.4s" data-filter="[data-filter-card=accessories]">
+                                            Accessories
+                                        </button></li>
+                                    <li class="item-filters"> <button class="filters__button wow fadeInUp"
+                                            data-wow-delay="0.4s" data-filter="[data-filter-card=samples]">
+                                            Samples
+                                        </button></li>
+                                </ul>
 
+                                <div class="paddles">
+                                    <button class="left-paddle paddle hidden" />
+                                    < <button class="right-paddle paddle">
+                                        >
+                                        </button>
+                                </div>
+
+                            </div>
+                        </div>
                         <div class="view all-projects__view">
                             <div class="view__label wow fadeInUp" data-wow-delay="0.8s">
                                 See
@@ -531,8 +598,8 @@
                                             class="share__socnetwork">
                                             <span class="share__icon socicon socicon-instagram"></span>
                                         </a>
-                                        <a href="https://www.youtube.com/channel/UCKM6rVlk9TbtA65hoIyC1xg?view_as=subscriber" target="_blank"
-                                            class="share__socnetwork">
+                                        <a href="https://www.youtube.com/channel/UCKM6rVlk9TbtA65hoIyC1xg?view_as=subscriber"
+                                            target="_blank" class="share__socnetwork">
                                             <span class="share__icon socicon socicon-youtube"></span>
                                         </a>
                                     </div>
