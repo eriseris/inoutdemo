@@ -247,7 +247,7 @@ font-style:normal
 } */
 @font-face {
   font-family: 'Trajana';
-  src: url(/assets/fonts/Trajana-Sans-Regular.ttf);
+  src: url(../assets/fonts/Trajana-Sans-Regular.ttf);
   font-weight: normal;
   font-display: swap;
   font-style: normal
@@ -255,7 +255,7 @@ font-style:normal
 
 @font-face {
   font-family: 'Trajana';
-  src: url(/assets/fonts/Trajana-Sans-Light.ttf);
+  src: url(../assets/fonts/Trajana-Sans-Light.ttf);
   font-weight: 300;
   font-display: swap;
   font-style: normal
@@ -263,7 +263,7 @@ font-style:normal
 
 @font-face {
   font-family: 'Trajana';
-  src: url(/assets/fonts/Trajana-Sans-Bold.ttf);
+  src: url(../assets/fonts/Trajana-Sans-Bold.ttf);
   font-weight: bold;
   font-display: swap;
   font-style: normal
@@ -271,7 +271,7 @@ font-style:normal
 
 @font-face {
   font-family: 'Trajana';
-  src: url(/assets/fonts/Trajana-Sans-Semi-Bold.ttf);
+  src: url(../assets/fonts/Trajana-Sans-Semi-Bold.ttf);
   font-weight: 500;
   font-display: swap;
   font-style: normal
@@ -30301,7 +30301,7 @@ body .is-layout-flex>* {
 
 .left-paddle {
   left: 0;
-  background-image: url(/assets/left_arrow.png);
+  background-image: url(../assets/left_arrow.png);
   background-size: 16px 16px;
   background-repeat: no-repeat;
   background-position: center;
@@ -30310,7 +30310,7 @@ body .is-layout-flex>* {
 
 .right-paddle {
   right: 0;
-  background-image: url(/assets/right_arrow.png);
+  background-image: url(../assets/right_arrow.png);
   background-size: 16px 16px;
   background-repeat: no-repeat;
   background-position: center;
