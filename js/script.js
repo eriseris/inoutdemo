@@ -1819,7 +1819,7 @@ modules.add('buttonAnimations');
             animations.start();
             //!client.isMobile && poster.fadeTo(0);
             posterSliderCtrl.navCtrl(0);
-        }, 200);
+        }, 3000);
 
     },
 
@@ -5830,7 +5830,7 @@ $('.menu-filters').on('scroll', function() {
 // scroll to left
 $(rightPaddle).on('click', function() {
   $('.menu-filters').animate({
-    scrollLeft: getMenuPosition() + 100
+    scrollLeft: getMenuPosition() + 200
   }, scrollDuration);
 });
 
@@ -5838,6 +5838,6 @@ $(rightPaddle).on('click', function() {
 $(leftPaddle).on('click', function() {
 
   $('.menu-filters').animate({
-    scrollLeft: getMenuPosition() - 100
+    scrollLeft: getMenuPosition() - 200
   }, scrollDuration);
 });
